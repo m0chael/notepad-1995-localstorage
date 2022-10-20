@@ -2,6 +2,7 @@
 // Script which enables a localStorage browser and editor implemented as a note taking app
 // Allows viewing and loading old notes, creating new notes, overwriting, and a panel that is shrinkable
 
+
 let totalNoteCount = 0; // Counts the total notes in localStorage for new names of the storage objects
 let oldNotes = []; // Contains array of old notes that get loaded from localStorage as a localStorage browser
 let keyNames = []; // Key names of the localStorage items
@@ -9,6 +10,8 @@ let isLoadedAndWillOverwrite = false; // Switch for whether to overwrite a local
 let currentLoadedTitleForOverwrite = ""; // Holds the key title of the localStorage object to be overwritten when applicable via the above switch
 const STRING_EXCERPT_LENGTH = 30; // Excerpt length in the loader panel
 function q(incoming) { return document.querySelector(incoming); };
+
+
 // Setup the note counter initially which gets called by loadOldNotes
 function setupNoteCount(incomingTotal) {
   let thisCount = parseInt(localStorage.getItem("note1995-count"));
