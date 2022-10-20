@@ -1,0 +1,93 @@
+body, div {
+  padding:0;
+  margin:0;
+}
+.note-container {
+  height:calc(300px - 4.3rem);
+}
+.note-container textarea {
+  resize: none;
+  width:calc(100% - 3rem);
+  margin-top:1rem;
+  height:190px;
+}
+.hide {
+  display: none;
+}
+.note-window {
+  width:100%;
+  margin-top:0.5rem;
+  position: absolute;
+  z-index: 9;
+  background-color: bisque;
+  text-align: center;
+}
+.note-window-menu {
+  cursor:crosshair;
+  border-bottom:1px solid black;
+  padding:1rem;
+}
+.note-window .note-window-menu nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-left:0;
+  margin:0;
+  padding:0;
+}
+.note-window-menu ul li {
+  border-radius: 50%;
+  width:2rem;
+  height:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right:0.3rem;
+}
+.note-window-menu ul li:last-child {
+  position:relative;
+  left:1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: crosshair;
+  min-width: 100px;
+}
+.note-window-menu ul li .content {
+  display: none;
+}
+.note-window-menu ul li:hover > .content {
+  display: block;
+}
+.note-window-menu ul li.red {
+  background-color: red;
+}
+.note-window-menu ul li.yellow {
+  background-color: yellow;
+}
+.note-window-menu ul li.green {
+  background-color: lightgreen;
+}
+aside {
+  width:100%;
+  background-color: bisque;
+  color:black;
+  border-bottom:1px solid black;
+}
+aside p, aside ul {
+  margin:0;
+  padding:2rem;
+}
+#note-loader {
+  padding-top:0;
+  padding-left:4rem;
+}
+#note-loader li .open-note:hover, #note-loader li .delete-note:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#note-loader li .actual-excerpt {
+  font-style: italic;
+  font-size:0.9rem;
+  background-color:lightgray;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1995 - Notepad</title>
+    <!-- Adding styles for the notepad client side app -->
+    <link rel="stylesheet" href="css/notepad-styles.css">
+</head>
+<body>
+  <aside>
+    <p><strong>Welcome to the 1995 note taking nostalgia app!</strong> This is a simple localStorage browser and manager as a note taking app (fully client side).</p>
+    <ul id="note-loader"></ul>
+  </aside>
+
+  <div class="note-window">
+    <div class="note-window-menu">
+      <nav>
+        <ul>
+          <li class="save green"><span class="content">save</span></li>
+          <li class="shrink yellow"><span class="content">-</span></li>
+          <li class="note-title">Unsaved...</li>
+        </ul>
+      </nav>
+    </div>
+    <div id="note-container" class="note-container">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+
+<!-- Loading the notepad-loader script which handles logic and interaction -->
+<script src="js/notepad-loader.js"></script>
+</body>
+</html>
